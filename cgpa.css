@@ -1,0 +1,503 @@
+#body
+{
+    margin:0px;
+   
+}
+
+
+
+#title
+{
+    background-color:rgb(86, 173, 227);
+}
+#h
+{
+    font-size:20px;
+    text-align: center;
+    animation: flicker 1.5s infinite alternate;
+    color:rgb(62, 62, 62);
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px rgb(244, 9, 9),
+        0 0 11px rgb(179, 12, 12),
+        0 0 19px rgb(135, 3, 3),
+        0 0 40px rgb(255, 0, 38),
+        0 0 80px rgb(187, 54, 54),
+        0 0 90px rgb(120, 60, 60),
+        0 0 100px rgb(181, 150, 150),
+        0 0 150px rgb(209, 205, 206);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+  #SemesterPage
+  {
+    float:left;
+    width:100%;
+    position:sticky;
+    top:0px;
+    z-index: 50;
+    background-color:gainsboro;
+
+  }
+  #heading
+  {
+    float:left;
+    padding:25px;
+    width:400px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px;
+    color: brown;
+  }
+
+  #choose
+  {
+    float:left;
+    width:400px;
+    padding:20px;
+
+  }
+ 
+
+  #semesters
+  {
+    font-size:10px;
+    padding:10px;
+    background-color:azure;
+  }
+
+
+
+
+  #submit
+  {
+    font-size:20px;
+    margin-left:60px;
+    background-color: deepskyblue;
+    font-family: 'Times New Roman', Times, serif;
+    padding:10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 3px;
+
+    
+  }
+
+  #addsemesters
+  {
+    
+    display: none;
+    position:absolute;
+    left:630px;
+    top:15px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: deepskyblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 2px 2px 3px 3px;
+
+
+  }
+
+  #addsemesters:hover
+  {
+    background-color: greenyellow;
+    transition: all 3s;
+  }
+
+  #submit:hover
+  {
+    background-color:rgb(117, 167, 31);
+    transition: all 3s;
+  }
+
+  #cgpaimage
+  {
+    position: absolute;
+    height:300px;
+    width:500px;
+    top:300px;
+    left:450px;
+    display: block;
+    border: 1px solid black;
+    box-shadow: 2px 3px 2px 7px;
+  }
+  #cgpaimage >h3
+  {
+    color: black;
+    animation: flickers 1.5s infinite alternate;
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left:20px;
+    margin-top:15px;
+
+  }
+
+  
+@keyframes flickers {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px deepskyblue,
+      0 0 11px rgb(16, 140, 181),
+      0 0 19px  rgb(7, 85, 111),
+      0 0 40px rgb(255, 0, 38),
+      0 0 80px rgb(187, 54, 54),
+      0 0 90px rgb(120, 60, 60),
+      0 0 100px rgb(181, 150, 150),
+      0 0 150px rgb(209, 205, 206);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+
+
+
+
+  #cgpaim
+  {
+    border-radius: 20px;
+    height:200px;
+    width:250px;
+    margin-left:90px;
+  }
+
+  #container
+  {
+    display :flex;
+    flex-wrap: wrap;
+    width:80%;
+    flex-direction: column;
+    margin:20px;
+
+
+  
+  
+  }
+  #container >div
+  {
+    display: grid;
+    grid-template-areas:
+    'he'
+    'box'
+    'addcoursebox';
+    margin-top:15px;
+    margin-bottom:10px;
+    padding-left:30px;
+    padding-bottom: 10px;
+    width:80%;
+    border: 3px solid black;
+    background-color:white
+
+    
+  }
+  #container >div 
+  {
+     transition: all .3s ease-in-out;
+
+  }
+
+
+  #container >div h2
+  {
+         text-align: center;
+         color:rgb(165, 24, 24);
+  }
+  .he 
+  {
+    grid-area:he;
+  }
+
+  .he p
+  {
+      float:left;
+      text-align: center;
+      border:1px solid black;
+      border-radius: 20px;
+      width:20%;
+      padding: 10px;
+      margin-left:15px;
+      margin-bottom:15px;
+      background-color: deepskyblue;
+      
+  }
+
+  .he :hover
+  {
+    background-color:deepskyblue;
+    transition:all 3s;
+  }
+  .box
+  {
+    grid-area: box;
+    border:2px solid black;
+    margin:20px;
+    border-bottom: 3px 3px 2px 4px;
+    
+  }
+  .box input
+  {
+    width:20%;
+    height:25px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    margin-right:20px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    margin-top:20px;
+  }
+
+  .box select
+  {
+    margin-left:20px;
+    margin-bottom:15px;
+    text-align: center;
+    padding:5px;
+    width:20%;
+    height:30px;
+    border-radius:20px;
+    margin-top:15px;
+    border: 1px solid black;
+
+  }
+ 
+  .box >div input
+  {
+    width:20%;
+    height:25px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    margin-right:20px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    margin-top:20px;
+  }
+
+  .box >div select 
+  {
+    margin-left:20px;
+    margin-bottom:15px;
+    text-align: center;
+    padding:5px;
+    width:20%;
+    height:30px;
+    border-radius:20px;
+    margin-top:15px;
+    border: 1px solid black;
+  }
+
+
+
+  .addcoursebox
+  {
+    grid-area: addcoursebox;
+    margin:10px;
+  }
+
+  .addcourse
+  {
+    float:left;
+    font-size:15px;
+    padding:10px;
+    margin-left:20px;
+    margin-right:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:20%;
+    text-align:center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px 1px;
+    background-color: deepskyblue;
+    font-family: 'Times New Roman', Times, serif;
+
+
+  }
+
+  .result
+  {
+    float:left;
+    font-size:15px;
+    padding:10px;
+    margin-left:20px;
+    margin-right:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:20%;
+    text-align:center;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px 1px;
+    background-color:rgb(41, 39, 39);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+
+  }
+
+  .calculategpa
+  {
+    float:left;
+    color:black;
+    font-size:15px;
+    padding:10px;
+    margin-left:20px;
+    margin-right:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:20%;
+    text-align:center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px 1px;
+    background-color: deepskyblue;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+  .addcourse:hover
+  {
+    background-color:lightgray;
+  }
+
+  .result:hover
+  {
+    background-color:deepskyblue;
+  }
+
+  .calculategpa:hover
+  {
+    background-color:lightgray;
+  }
+
+  #cgparesult
+  {
+    position: absolute;
+    top:150px;
+    right:30px;
+    width:370px;
+    margin:20px;
+    background-color: blanchedalmond;
+    
+    
+   
+  }
+  #div1
+  {
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    background-color: white;    
+  }
+  #div1 p
+  {
+    
+    float:left;
+    margin-left:35px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+    color:darkorange;
+    
+
+  }
+
+  #div1 input[type="text"]
+  {
+    width:35%;
+    height:25px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    margin-right:20px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    margin-top:20px;
+    background-color: deepskyblue;
+    color: black;
+  }
+
+  #div1 input[type="submit"]
+  {
+    width:50%;
+    height:30px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    margin-right:20px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    margin-top:20px;
+    background-color:chartreuse;
+  }
+  #div1 input:hover
+  {
+      background-color:beige;
+      transition-delay: all 2s;
+      
+  }
+  
+#FINALCGPA
+{
+  margin:20px;
+  border: 2px solid black;
+  background-color: white;
+}
+  #FINALCGPA p 
+  {
+    width:50%;
+    height:30px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    color:black;
+  }
+
+  
+  #FINALCGPA input
+  {
+    width:50%;
+    height:30px;
+    padding:5px;
+    margin-left:10px;
+    margin-bottom:15px;
+    text-align: center;
+    border-radius: 20px;
+    border:1px solid black;
+    background-color:azure;
+    color: rgb(55, 235, 55);
+    font-size: 15px;
+  }
+
+
+ 

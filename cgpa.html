@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA CALCULATOR </title>
+    <link rel="icon" href="icon.png" type="icon">
+    <link rel="stylesheet" href="cgpa.css">
+</head>
+<body>
+    <div id="title">
+         <h2 id="h">CGPA CALCULATOR</h2>
+    </div>
+    <div id="SemesterPage">
+        <div id="heading">
+             CHOOSE NO OF SEMESTERS...
+             
+        </div>
+        <div id="choose">
+         <label for="semesters" name="semester">Semester</label>
+         <select id="semesters">
+            <option value ="none">None</option>
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+         </select>
+         <input type="submit"  id="submit" value="Submit" onclick="addSemester()">
+         <input type="submit" id="addsemesters" value="ADD SEMESTER" onclick="addsemesters()">
+        </div>
+    </div>
+    <div id="container">
+         
+    </div>
+
+    <div id="cgpaimage">
+          <h3>CALCULATE YOUR GPA AND CGPA</h3>
+          <img src="cgpa image.png" id="cgpaim">
+    </div>
+    <div class="cgparesult" id="cgparesult">
+         
+    </div>
+
+    <script src="cgpa.js"></script>
+    
+</body>
+</html>
